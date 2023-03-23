@@ -51,6 +51,12 @@ function generatePassword() {
     console.log("Special Character " + confirmSpecial);
     
   };
-    
+  // none of options chosen
+  if (!confirmLower && !confirmUpper && !confirmNumber && !confirmSpecial) {
+    userChoices = alert("You must choose a criteria");
+  // lower upper number and special are chosen
+  } else if (confirmLower && confirmUpper && confirmNumber && confirmSpecial) {
+    userChoices = lowerCase.concat(upperCase, numbers, special);
+    console.log(userChoices);
   }
 
