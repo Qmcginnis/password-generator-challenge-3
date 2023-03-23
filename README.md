@@ -18,7 +18,7 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
-![Alt text](/Assets/Images/127.0.0.1_5500_Develop_index.html.png "Webpage screenshot")
+![Alt text](/asset/Images/127.0.0.1_5500_Develop_index.html.png "Webpage screenshot")
 https://qmcginnis.github.io/password-generator-challenge-3/
 
 
