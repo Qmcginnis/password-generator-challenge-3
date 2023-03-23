@@ -1,4 +1,4 @@
-password-generator-challenge-3
+# password-generator-challenge-3
 
 In this challenge we were given starter code for a password generator and asked for the following 
 Acceptance Criteria
