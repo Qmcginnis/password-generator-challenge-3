@@ -10,13 +10,9 @@ var confirmSpecial;
 var userChoices;
 // variables for our input data
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var blankUpper = [];
-var toUpper = function (x) {
-  return x.toUpperCase();
-};
-upperCase = lowerCase.map(toUpper);
+var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-var special = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
+var special = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", " < ", "=", " > ", " ? ", "@", "[",  "]", " ^ ", "_", "`", "{", "|", "}", "~"];
 
 // Write password to the #password input
 function writePassword() {
@@ -31,7 +27,7 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
-  passwordLength = prompt("How many characters would you like your password to be? Choose between 8 and 64");
+  passwordLength = prompt("How many characters would you like your password to be? Choose between 8 and 128");
   console.log("Password length" + passwordLength);
 
   if (!passwordLength) {
@@ -105,8 +101,8 @@ function generatePassword() {
     console.log(userChoices);
   }
   else if (confirmUpper) {
-    userChoices = blankUpper.concat(upperCase);
-    console.log(userChoices);
+    userChoices = upperCase;
+    console.log(userChoices + ' blank upper here');
   }
   else if (confirmNumber) {
     userChoices = numbers;
@@ -124,7 +120,7 @@ function generatePassword() {
     passwordBlank.push(allChoices);
     console.log(allChoices);
   }
-
+//console.log(blankUpper + ' HERE CHECK HERE');
   
   var password = passwordBlank.join("");
   console.log("Your Pasword is: " + password);
