@@ -120,7 +120,7 @@ function generatePassword() {
     passwordBlank.push(allChoices);
     console.log(allChoices);
   }
-//console.log(blankUpper + ' HERE CHECK HERE');
+
   
   var password = passwordBlank.join("");
   console.log("Your Pasword is: " + password);
